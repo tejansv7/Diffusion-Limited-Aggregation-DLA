@@ -32,7 +32,8 @@ presented in the below figure for every 100 step size.
 In order to illustrate the above, for a given N, say N = 1500, the output will
 contain the following data for the simulations of N = 100,200,300,…1500 .
 
-![](media/d45251a065b37e4bbd7a911637a2c1df.emf)
+![image](https://user-images.githubusercontent.com/71938185/147536312-81f66906-0963-49c1-b0c0-7b2fadbff4f0.png)
+
 
 Fig.1: This figure shows the typical data and its structure obtained from
 running the simulation.
@@ -51,25 +52,26 @@ Note that Feature 1 and Feature 2 can be obtained from the code titled
 “Estimation_of \_k-v2.0.ipynb”. The variation of k with respect to these two
 features is as shown below.
 
-![](media/a4763634a34226d2b5780d7a82122ed3.png)There is no convergence observed
+There is no convergence observed
 by just using feature 1 and 2 without normalizing them using N can be seen in
 Fig2 and Fig3 respectively. For feature 1 the ranges are spanning around (100 to
 5000) and for feature 2 they are spanning in between (100 to 7000) this might
 significantly increase with further increase in N.
 
-![](media/ca07441dadc2feb8ab40d70014a130c5.png)Fig.2: Feature 1 vs k
+![image](https://user-images.githubusercontent.com/71938185/147536421-78d202fe-15ff-4800-bcef-557008b7dff2.png)Fig.2: Feature 1 vs k
 
+![image](https://user-images.githubusercontent.com/71938185/147536538-cb1a6e94-7844-4aa7-8800-d82008b564bb.png)
 Fig.3: Feature 2 vs k
 
 So, in order to confine that feature values with in a less varying extent, they
 have been normalized by dividing with N, plots are generated for the same are
 shown below.
 
-![](media/48008d0e6457560125760e7bc4b67364.png)
+![image](https://user-images.githubusercontent.com/71938185/147536554-eac7143c-efa5-4c75-915d-2ab043f6669c.png)
 
 Fig.4: Normalized Feature 1 vs k
 
-![](media/2d1e0e3987758eac0bec5f9c78d28cd0.png)
+![image](https://user-images.githubusercontent.com/71938185/147536579-4c4ee17e-1058-411b-b2d3-f6bc26890202.png)
 
 Fig.5: Normalized Feature 2 vs k
 
@@ -83,13 +85,14 @@ the curve on test set thus by obtaining a model. Three fits were decided and
 made based on Fig:4 and Fig:5. They are Linear, first order, and second order
 with respect to normalized feature1 and normalized feature2 separately.
 
-![](media/7a7f9a197ba55508bb92192670777b13.png)The following are the plots and
+The following are the plots and
 results as shown.
 
-![](media/5f2f363a12b997bb1939bc02a401fb35.png)Fig.6: Different models fitted
+![image](https://user-images.githubusercontent.com/71938185/147536625-1b941a80-e89c-40fa-9e89-110168451c19.png)Fig.6: Different models fitted
 and tested for the data Normalized Feature 1 and k, the predictions on test set
 is shown in this figure
 
+![image](https://user-images.githubusercontent.com/71938185/147536637-efe76266-4a19-4802-8b86-bf35fe227ba9.png)
 Fig.7: Different models fitted for the data Normalized Feature 2 and k, the
 predictions on test set is shown in this figure
 
@@ -134,7 +137,10 @@ compared with all.
         been observed each time in 50 simulations that have been done on 101x101
         matrix, N =100, k =0.15 and the feature variations is as shown below.
 
-        ![](media/3f0be64fc3e7f2cf34963bd4f567f018.png)
+        ![image](https://user-images.githubusercontent.com/71938185/147536661-497d863d-dc2a-4291-be18-ac8db955f771.png)
+        
+        ![image](https://user-images.githubusercontent.com/71938185/147536831-d01d8971-3051-4e1c-a3f7-f9af1b0dc504.png)
+
 
 -   Usage of different kernel sizes in sobel edge detection for feature 1 used
     in the study to be analysed. As this is done based on 5x5 filter only.
